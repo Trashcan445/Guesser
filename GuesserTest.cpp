@@ -43,7 +43,7 @@ TEST(GuesserTest, distance_test)
 
 TEST(GuesserTest, match_test)
 {
-	// Guessed right
+	// Guessed right after 2 wrong
 	Guesser object("Secret");
 	ASSERT_EQ(object.match("Secre") , false);
 	ASSERT_EQ(object.match("Secrete") , false);
